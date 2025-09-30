@@ -1,0 +1,126 @@
+/* Hydejack-inspired CSS for sidebar and content layout */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #f6f8fa;
+  color: #232629;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 290px;
+  min-width: 250px;
+  background: url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80') center center/cover no-repeat,
+              linear-gradient(135deg, #1a2a3a 80%, #233045 100%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px 20px 20px;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.03);
+}
+
+.sidebar .logo {
+  width: 80px;
+  height: 80px;
+  background: rgba(255,255,255,0.14);
+  border-radius: 50%;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4em;
+  font-weight: bold;
+}
+
+.sidebar h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6em;
+  margin: 0 0 12px 0;
+}
+
+.sidebar p {
+  font-size: 1em;
+  margin: 0 0 12px 0;
+  line-height: 1.5;
+  color: #f4f4f4;
+}
+
+.sidebar nav {
+  margin-top: 24px;
+}
+
+.sidebar nav a {
+  display: block;
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 1.05em;
+  margin: 10px 0;
+  padding: 5px 12px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.sidebar nav a:hover {
+  background: rgba(255,255,255,0.09);
+  color: #fff;
+}
+
+.sidebar .download {
+  margin-top: 30px;
+}
+
+.sidebar .download a {
+  display: inline-block;
+  background: #fff;
+  color: #234;
+  font-weight: bold;
+  padding: 9px 18px;
+  border-radius: 24px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: background 0.2s, color 0.2s;
+}
+
+.sidebar .download a:hover {
+  background: #cce3fa;
+}
+
+.content {
+  flex: 1;
+  padding: 48px 32px 32px 32px;
+  background: #fff;
+  min-width: 0;
+  box-shadow: 0 1px 7px 0 rgba(20,30,50,0.04);
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    min-width: 0;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 10px;
+    height: auto;
+  }
+  .sidebar .logo {
+    margin: 0 16px 0 0;
+    font-size: 1.8em;
+    width: 62px;
+    height: 62px;
+  }
+  .content {
+    padding: 24px 6vw 16px 6vw;
+  }
+}
