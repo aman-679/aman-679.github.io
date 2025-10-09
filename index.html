@@ -2,59 +2,158 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Aman Verma - Professional Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aman Verma - Professional Portfolio in FMCG, Telecom & Channel Sales. 9+ years of experience in driving growth, distribution, and activation excellence.">
+  <title>Aman Verma | Professional Portfolio</title>
+  <style>
+    :root {
+      --primary: #0b6cf2;
+      --secondary: #003c8f;
+      --light-bg: #f8faff;
+      --text-dark: #1f2937;
+      --text-light: #555;
+      --card-bg: #ffffff;
+      --accent: #e8f0fe;
+    }
+
+    body {
+      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+      margin: 0;
+      background: var(--light-bg);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 22px;
+      background: #fff;
+      color: var(--primary);
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+
+    .btn:hover {
+      background: var(--accent);
+    }
+
+    section {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      border-left: 5px solid var(--primary);
+      padding-left: 10px;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 25px;
+    }
+
+    footer {
+      background: var(--secondary);
+      color: #fff;
+      text-align: center;
+      padding: 25px;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2rem; }
+      section { margin: 40px 10px; }
+    }
+  </style>
 </head>
 <body>
-  <div class="wrapper">
-    <aside class="sidebar">
-      <div class="logo">AV</div>
-      <h1>Aman Verma</h1>
-      <p>
-        Professional Portfolio<br>
-        <strong>FMCG, Telecom, Channel Sales</strong>
-      </p>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#achievements">Achievements</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="download">
-        <a href="AmanVResume.pdf" download>Download Resume</a>
-      </div>
-    </aside>
-    <main class="content">
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          Welcome to my professional portfolio website! I am Aman Verma, with 9+ years of experience in FMCG, Telecom, and Channel Sales. I specialize in growth, distribution expansion, and impactful consumer activations.
-        </p>
-      </section>
-      <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-          <li>Market Expansion in Northern India</li>
-          <li>Channel Partner Optimization</li>
-          <li>Digital Consumer Activation Drives</li>
-        </ul>
-      </section>
-      <section id="achievements">
-        <h2>Achievements</h2>
-        <ul>
-          <li>Best Channel Growth Manager 2022</li>
-          <li>Exceeded sales targets for 5 consecutive years</li>
-        </ul>
-      </section>
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>
-          Email: amanv@example.com<br>
-          LinkedIn: <a href="https://www.linkedin.com/in/aman-verma/" target="_blank">aman-verma</a>
-        </p>
-      </section>
-    </main>
-  </div>
+  <header>
+    <h1>Aman Verma</h1>
+    <p>Sales & Distribution Leader | FMCG • Telecom • Channel Development</p>
+    <a href="Aman_Verma_Resume.pdf" class="btn" target="_blank">Download Resume</a>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>I am Aman Verma, a results-oriented professional with over 9 years of experience in FMCG and Telecom industries. I specialize in sales strategy, distributor management, channel development, and consumer activations. I’ve managed business portfolios worth ₹30M+ and driven double-digit revenue growth through innovation and execution excellence.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Key Projects</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Market Expansion in Northern India:</strong> Increased outlet coverage by 22%, adding 165+ new stores.</li>
+        <li><strong>Channel Partner Optimization:</strong> Piloted and scaled new routes to market including HoReCa, Chemist, and Institutional channels.</li>
+        <li><strong>Digital Consumer Activation Drives:</strong> Executed large-scale activations like Nestlé Mahakumbh 2025 and Airtel Cashless Village Campaign.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <div class="card">
+      <ul>
+        <li>Awarded <strong>Best Channel Growth Manager 2022</strong>.</li>
+        <li>Exceeded sales targets for 5 consecutive years (2019–2024).</li>
+        <li>Mentored 7 interns and trainees; 80% transitioned to Officer-level roles.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p><strong>Email:</strong> <a href="mailto:amanvarma679@outlook.com">amanvarma679@outlook.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aman-verma-bb9526ba" target="_blank">linkedin.com/in/aman-verma-bb9526ba</a></p>
+      <p><strong>Location:</strong> Kanpur, Uttar Pradesh, India</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Aman Verma | Professional Portfolio | Built with GitHub Pages
+  </footer>
 </body>
 </html>
