@@ -1,27 +1,55 @@
-# Aman Verma - Professional Portfolio
+# FMCG Territory Growth: Nestlé & CavinKare (2016–2019)
 
-Welcome to my professional portfolio website, hosted on **GitHub Pages**.  
-This site highlights my **career achievements, skills, and projects** across 9+ years in **FMCG, Telecom, and Channel Sales**, where I’ve delivered consistent business growth, distribution expansion, and impactful consumer activations.  
-
-## 🌟 What you’ll find here
-- My **resume** and professional background  
-- Key **projects** and campaigns I have led  
-- Skills in **sales, distribution management, channel development, and P&L ownership**  
-- Certifications in **Lean Six Sigma Green Belt, Advanced Excel for Sales, and more**  
-
-## 🚀 About Me
-- 9+ years of experience in **sales & distribution leadership** across Nestlé, CavinKare, and Airtel.  
-- Proven expertise in **retail expansion, new route-to-market initiatives, and brand activations**.  
-- Passionate about building **sustainable distributor partnerships** and mentoring sales teams.  
-
-## 🔗 Links
-- [LinkedIn Profile](https://www.linkedin.com/in/aman-verma-bb9526ba/)  
-  
+**Role**: Territory Sales Executive  
+**Sectors**: FMCG – Food & Personal Care  
+**Regions Covered**: North & Central India  
+**Duration**: 2016–2019
 
 ---
 
-📌 This repository contains:
-- `index.html` → the main website file (served by GitHub Pages)  
-- `README.md` → this file, giving context for recruiters or collaborators browsing the repo  
+## 🧭 Objective
+
+To expand retail distribution footprint and drive revenue growth across urban, rural, and premium outlets for Nestlé and CavinKare portfolios.
 
 ---
+
+## 🚀 Strategy
+
+- Identified underpenetrated markets using outlet segmentation and sales data.
+- Onboarded new distributors and trained field sales reps (PSRs).
+- Implemented beat planning and outlet mapping to optimize coverage.
+- Introduced visibility assets and planogram compliance in key outlets.
+
+---
+
+## 📈 Key Achievements
+
+| Brand       | Expansion | Outlet Growth | Revenue Impact |
+|-------------|-----------|----------------|----------------|
+| **Nestlé**  | +22%      | +165 outlets   | Double-digit growth |
+| **CavinKare** | +35%    | Rural & urban mix | Improved brand presence |
+
+- Achieved 103%+ of sales targets consistently.
+- Improved asset utilization and billing efficiency across 95% of outlets.
+
+---
+
+## 🧠 Skills Demonstrated
+
+- Territory Mapping & RTM Strategy  
+- Distributor Onboarding & Training  
+- Sales Analytics & Beat Optimization  
+- Channel Expansion (Urban + Rural)  
+- Team Collaboration & Execution
+
+---
+
+## 📎 Supporting Materials
+
+> _Note: Visuals, dashboards, or campaign photos can be added here in future updates._
+
+---
+
+## 🔁 Reflection
+
+This foundational experience built my core expertise in distribution strategy, outlet segmentation, and execution discipline — setting the stage for larger-scale activations and strategic roles in later years.
