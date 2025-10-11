@@ -7,8 +7,8 @@ description: Driving Territory Growth, Channel Innovation, and Revenue Optimizat
 
 Results-oriented leader with **9+ years** in FMCG (Nestlé, CavinKare) and Telecom (Airtel), managing ₹30M+ portfolios. Expertise in scaling distribution, executing high-impact activations, and mentoring teams for double-digit growth. Targeting Area Sales Manager or Regional roles at companies like PepsiCo, Godrej, or UBL—let's connect!
 
-- **LinkedIn**: [linkedin.com/in/aman-verma](https://linkedin.com/in/yourprofile)  
-- **Email**: [aman@example.com](mailto:aman@example.com)  
+- **LinkedIn**: [www.linkedin.com/in/aman-verma-bb9526ba](www.linkedin.com/in/aman-verma-bb9526ba)  
+- **Email**: [amanvarma679@outlook.com](mailto:amanvarma679@outlook.com)  
 - **Resume**: [Download PDF](/resume.pdf)  
 
 ![Professional Headshot](/profile.jpg) <!-- Upload your photo for visual polish -->
