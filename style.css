@@ -1,12 +1,12 @@
-/* Hydejack-inspired CSS for sidebar and content layout */
+/* Modernized CSS for Aman's 2025 portfolio in BMW racing colors (blue, red, white) */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap');
 
 body {
   margin: 0;
-  font-family: 'Roboto', Arial, sans-serif;
-  background: #f6f8fa;
-  color: #232629;
+  font-family: 'Inter', sans-serif;
+  background: #FFFFFF; /* White for clean, premium look */
+  color: #1A252F; /* Dark slate for readability */
 }
 
 .wrapper {
@@ -15,91 +15,132 @@ body {
 }
 
 .sidebar {
-  width: 290px;
-  min-width: 250px;
-  background: url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80') center center/cover no-repeat,
-              linear-gradient(135deg, #1a2a3a 80%, #233045 100%);
-  color: #fff;
+  width: 300px;
+  min-width: 260px;
+  background: linear-gradient(135deg, #003087 70%, #D52B1E 100%); /* BMW blue to red gradient */
+  color: #FFFFFF;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 20px 20px 20px;
-  box-shadow: 2px 0 8px rgba(0,0,0,0.03);
+  padding: 40px 20px;
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar .logo {
-  width: 80px;
-  height: 80px;
-  background: rgba(255,255,255,0.14);
+  width: 90px;
+  height: 90px;
+  background: rgba(255, 255, 255, 0.2); /* Subtle white overlay */
   border-radius: 50%;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2.4em;
-  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.6em;
+  font-weight: 700;
+  color: #FFFFFF;
+  border: 2px solid #D52B1E; /* Red accent */
 }
 
 .sidebar h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.6em;
-  margin: 0 0 12px 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8em;
+  margin: 0 0 15px 0;
+  color: #FFFFFF;
 }
 
 .sidebar p {
-  font-size: 1em;
-  margin: 0 0 12px 0;
-  line-height: 1.5;
-  color: #f4f4f4;
+  font-size: 1.1em;
+  margin: 0 0 15px 0;
+  line-height: 1.6;
+  color: #E6E9ED; /* Light gray for contrast */
+  text-align: center;
 }
 
 .sidebar nav {
-  margin-top: 24px;
+  margin-top: 30px;
+  width: 100%;
 }
 
 .sidebar nav a {
   display: block;
-  color: #e0e0e0;
+  color: #E6E9ED;
   text-decoration: none;
-  font-size: 1.05em;
-  margin: 10px 0;
-  padding: 5px 12px;
-  border-radius: 6px;
-  transition: background 0.2s, color 0.2s;
+  font-size: 1.1em;
+  margin: 12px 0;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease; /* Smooth micro-animation */
 }
 
 .sidebar nav a:hover {
-  background: rgba(255,255,255,0.09);
-  color: #fff;
+  background: #D52B1E; /* Red on hover */
+  color: #FFFFFF;
+  transform: scale(1.03); /* Subtle scale effect */
 }
 
 .sidebar .download {
-  margin-top: 30px;
+  margin-top: 35px;
 }
 
 .sidebar .download a {
   display: inline-block;
-  background: #fff;
-  color: #234;
-  font-weight: bold;
-  padding: 9px 18px;
-  border-radius: 24px;
+  background: #D52B1E; /* Red button */
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 30px;
   text-decoration: none;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
 }
 
 .sidebar .download a:hover {
-  background: #cce3fa;
+  background: #003087; /* Blue on hover */
+  transform: translateY(-2px); /* Lift effect */
 }
 
 .content {
   flex: 1;
-  padding: 48px 32px 32px 32px;
-  background: #fff;
+  padding: 50px 40px;
+  background: #FFFFFF;
   min-width: 0;
-  box-shadow: 0 1px 7px 0 rgba(20,30,50,0.04);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.content h2 {
+  color: #003087; /* Blue for headings */
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.9em;
+  margin-bottom: 20px;
+}
+
+.content p {
+  line-height: 1.7;
+  font-size: 1.05em;
+}
+
+.content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.content ul li {
+  margin: 10px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.content ul li:before {
+  content: '✔';
+  color: #D52B1E; /* Red checkmarks */
+  position: absolute;
+  left: 0;
+}
+
+.content img {
+  max-width: 100%;
+  border-radius: 8px;
 }
 
 @media (max-width: 800px) {
@@ -110,17 +151,28 @@ body {
     width: 100%;
     min-width: 0;
     flex-direction: row;
-    align-items: flex-start;
-    padding: 16px 10px;
+    align-items: center;
+    padding: 20px;
     height: auto;
+    justify-content: space-between;
   }
   .sidebar .logo {
-    margin: 0 16px 0 0;
-    font-size: 1.8em;
-    width: 62px;
-    height: 62px;
+    margin: 0 20px 0 0;
+    font-size: 2em;
+    width: 70px;
+    height: 70px;
+  }
+  .sidebar nav {
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .sidebar nav a {
+    margin: 5px;
+    padding: 6px 12px;
   }
   .content {
-    padding: 24px 6vw 16px 6vw;
+    padding: 30px 5vw;
   }
 }
