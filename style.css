@@ -10,11 +10,12 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, #ECF0F1 0%, #D5DBDB 100%); /* Subtle Canva-like gradient */
+  background: url('background.jpg') center/cover no-repeat fixed, linear-gradient(135deg, #ECF0F1 0%, #D5DBDB 100%);
   color: #2C3E50;
   line-height: 1.6;
   overflow-x: hidden;
   backdrop-filter: blur(2px); /* Slight global blur for effect */
+}
 }
 
 /* Custom Scrollbar */
