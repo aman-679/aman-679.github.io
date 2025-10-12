@@ -7,6 +7,60 @@
   <meta name="keywords" content="Sales Leader, FMCG, Telecom, Area Sales Manager, Channel Development, Nestlé, Airtel">
   <title>Aman Verma | Sales & Distribution Leader</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .project-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .tab-button {
+      padding: 10px 20px;
+      cursor: pointer;
+      background: #F8F9FA;
+      border: 1px solid #E0E0E0;
+      border-radius: 5px;
+      font-weight: 600;
+      color: #2C3E50;
+    }
+    .tab-button.active {
+      background: #3498DB;
+      color: white;
+    }
+    .tab-content {
+      display: none;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .chart-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .chart {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    .chart-caption {
+      font-style: italic;
+      color: #7F8C8D;
+      margin-top: 10px;
+    }
+    @media (max-width: 600px) {
+      .project-tabs {
+        flex-direction: column;
+      }
+      .tab-button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -23,7 +77,7 @@
       <img src="/profile.jpg" alt="Aman Verma Headshot" class="headshot">
     </div>
   </header>
-  
+
   <main>
     <section id="about" class="section">
       <p>Results-driven leader with 9+ years in FMCG (Nestlé, CavinKare) and Telecom (Airtel), managing ₹30M+ portfolios. Specializing in scaling distribution, high-impact activations, and team mentoring for double-digit growth. Targeting Area Sales Manager roles at PepsiCo or Godrej.</p>
@@ -61,83 +115,96 @@
 
     <section id="projects" class="section">
       <h2 class="ribbon">Featured Projects <span class="ribbon-accent">Case Studies</span></h2>
-     <div class="project-grid">
-  <div class="project-card">
-    <h3>Market Expansion</h3>
-    <p>Scaled outlets; +22% Nestlé growth.</p>
-    <a href="project-market-expansion.html" target="_blank">View Details</a>
-  </div>
-  <div class="project-card">
-    <h3>Consumer Activations</h3>
-    <p>Mahakumbh 2025, Shimla Hill (120% YoY).</p>
-    <a href="project-consumer-activations.html" target="_blank">View Details</a>
-  </div>
-  <div class="project-card">
-    <h3>Channel Development</h3>
-    <p>Chemist, HoReCa, institutional gifting.</p>
-    <a href="project-channel-development.html" target="_blank">View Details</a>
-  </div>
-  <div class="project-card">
-    <h3>Distributor & P&L</h3>
-    <p>Joint planning, financial reviews.</p>
-    <a href="project-distributor-pnl.html" target="_blank">View Details</a>
-  </div>
-  <div class="project-card">
-    <h3>People Leadership</h3>
-    <p>Led 12 PSRs; mentored interns.</p>
-    <a href="project-people-leadership.html" target="_blank">View Details</a>
-  </div>
-  <div class="project-card">
-    <h3>Strategic Projects</h3>
-    <p>Airtel Payments Bank, Nestlé Mahakumbh.</p>
-    <a href="project-strategic-projects.html" target="_blank">View Details</a>
-  </div>
-</div>
-<div class="chart-container">
-  <img src="/growth-chart.png" alt="Sales Growth Chart" class="chart">
-  <p class="chart-caption">Performance metrics across key initiatives</p>
-</div>
-        <!-- Project 1: Market Expansion -->
-        <div class="project-card">
-          <h3>Market Expansion</h3>
-          <p>Scaled outlets; +22% Nestlé growth.</p>
-          <a href="fmcg-territory-growth-nestle-cavinkare/README.md" target="_blank">View Details</a>
-        </div>
-        
-        <!-- Project 2: Consumer Activations -->
-        <div class="project-card">
-          <h3>Consumer Activations</h3>
-          <p>Mahakumbh 2025, Shimla Hill (120% YoY).</p>
-          <a href="consumer-activations-mahakumbh-shimla-airtel/README.md" target="_blank">View Details</a>
-        </div>
-        
-        <!-- Project 3: Channel Development -->
-        <div class="project-card">
-          <h3>Channel Development</h3>
-          <p>Chemist, HoReCa, institutional gifting.</p>
-          <a href="channel-development-chemist-horeca-institutional/README.md" target="_blank">View Details</a>
-        </div>
-        
-        <!-- Project 4: Distributor & P&L -->
-        <div class="project-card">
-          <h3>Distributor & P&L</h3>
-          <p>Joint planning, financial reviews.</p>
-          <a href="distributor-roi-planning/README.md" target="_blank">View Details</a>
-        </div>
-        
-        <!-- Project 5: People Leadership -->
-        <div class="project-card">
-          <h3>People Leadership</h3>
-          <p>Led 12 PSRs; mentored interns.</p>
-          <a href="sales-team-leadership-impact/README.md" target="_blank">View Details</a>
-        </div>
-        
-        <!-- Project 6: Strategic Projects -->
-        <div class="project-card">
-          <h3>Strategic Projects</h3>
-          <p>Airtel Payments Bank, Nestlé Mahakumbh.</p>
-          <a href="strategic-projects-airtel-nestle-cavinkare/README.md" target="_blank">View Details</a>
-        </div>
+      <div class="project-tabs">
+        <div class="tab-button active" data-tab="market-expansion">Market Expansion</div>
+        <div class="tab-button" data-tab="consumer-activations">Consumer Activations</div>
+        <div class="tab-button" data-tab="channel-development">Channel Development</div>
+        <div class="tab-button" data-tab="distributor-pnl">Distributor & P&L</div>
+        <div class="tab-button" data-tab="people-leadership">People Leadership</div>
+        <div class="tab-button" data-tab="strategic-projects">Strategic Projects</div>
+      </div>
+      <div class="tab-content active" id="market-expansion">
+        <h3>FMCG Territory Growth: Nestlé & CavinKare (2016–2019)</h3>
+        <p><strong>Role:</strong> Territory Sales Executive | <strong>Sectors:</strong> FMCG – Food & Personal Care | <strong>Regions:</strong> North & Central India | <strong>Duration:</strong> 2016–2019</p>
+        <p><strong>Objective:</strong> Expand retail distribution and drive revenue growth across urban, rural, and premium outlets.</p>
+        <p><strong>Strategy:</strong></p>
+        <ul>
+          <li>Identified underpenetrated markets using outlet segmentation and sales data.</li>
+          <li>Onboarded new distributors and trained field sales reps (PSRs).</li>
+          <li>Implemented beat planning and outlet mapping.</li>
+          <li>Introduced visibility assets and planogram compliance.</li>
+        </ul>
+        <p><strong>Key Achievements:</strong></p>
+        <table>
+          <tr><th>Brand</th><th>Expansion</th><th>Outlet Growth</th><th>Revenue Impact</th></tr>
+          <tr><td>Nestlé</td><td>+22%</td><td>+165 outlets</td><td>Double-digit growth</td></tr>
+          <tr><td>CavinKare</td><td>+35%</td><td>Rural & urban mix</td><td>Improved presence</td></tr>
+        </table>
+        <ul>
+          <li>Achieved 103%+ of sales targets consistently.</li>
+          <li>Improved asset utilization and billing efficiency across 95% of outlets.</li>
+        </ul>
+        <p><strong>Impact:</strong> Unlocked double-digit revenue growth and sustainable distributor profitability.</p>
+      </div>
+      <div class="tab-content" id="consumer-activations">
+        <h3>Consumer Activations: Nestlé Mahakumbh, Shimla Hill & Airtel Cashless Village</h3>
+        <p><strong>Role:</strong> Sales Leader (2016–Present) | <strong>Sectors:</strong> FMCG (Nestlé), Telecom (Airtel) | <strong>Regions:</strong> North & Central India</p>
+        <p><strong>Objective:</strong> Drive visibility and incremental sales through marquee activations.</p>
+        <p><strong>Key Achievements:</strong></p>
+        <ul>
+          <li>Achieved 120% YoY growth in chocolate sales via Shimla Hill.</li>
+          <li>Increased consumer engagement by 15% through Mahakumbh 2025.</li>
+          <li>Expanded Airtel payment adoption by 25% in rural areas.</li>
+        </ul>
+        <p><strong>Impact:</strong> Enhanced brand presence and sustainable revenue uplifts.</p>
+      </div>
+      <div class="tab-content" id="channel-development">
+        <h3>Channel Development: Chemist, HoReCa & Institutional Gifting</h3>
+        <p><strong>Role:</strong> Sales Leader (2016–Present) | <strong>Sectors:</strong> FMCG (Nestlé, CavinKare), Telecom (Airtel)</p>
+        <p><strong>Objective:</strong> Open and scale new revenue streams.</p>
+        <p><strong>Key Achievements:</strong></p>
+        <ul>
+          <li>Unlocked 15–20% incremental sales through new channels.</li>
+          <li>Scaled Joyful Bliss gifting to 3–9 showrooms.</li>
+          <li>Improved channel profitability by 10%.</li>
+        </ul>
+        <p><strong>Impact:</strong> Diversified revenue sources and strengthened market penetration.</p>
+      </div>
+      <div class="tab-content" id="distributor-pnl">
+        <h3>Distributor & P&L Management</h3>
+        <p><strong>Role:</strong> Sales Leader (2016–Present) | <strong>Sectors:</strong> FMCG (Nestlé, CavinKare), Telecom (Airtel)</p>
+        <p><strong>Objective:</strong> Ensure sustainable growth and profitability for partners.</p>
+        <p><strong>Key Achievements:</strong></p>
+        <ul>
+          <li>Achieved 95% outlet billing and +100% asset ROI.</li>
+          <li>Reduced receivables overdue by 20%.</li>
+          <li>Enhanced distributor profitability by 15%.</li>
+        </ul>
+        <p><strong>Impact:</strong> Balanced topline growth with partner success.</p>
+      </div>
+      <div class="tab-content" id="people-leadership">
+        <h3>Sales Team Leadership & Impact</h3>
+        <p><strong>Role:</strong> Sales Leader (2016–Present) | <strong>Sectors:</strong> FMCG (Nestlé, CavinKare), Telecom (Airtel)</p>
+        <p><strong>Objective:</strong> Build and lead high-performing sales teams.</p>
+        <p><strong>Key Achievements:</strong></p>
+        <ul>
+          <li>Improved team productivity by 20% through training.</li>
+          <li>Transitioned 80% of interns to permanent roles.</li>
+          <li>Achieved 100% target compliance.</li>
+        </ul>
+        <p><strong>Impact:</strong> Created a robust talent pipeline and enhanced sales outcomes.</p>
+      </div>
+      <div class="tab-content" id="strategic-projects">
+        <h3>Strategic Projects: Airtel Payments Bank, Nestlé Mahakumbh & CavinKare Launch</h3>
+        <p><strong>Role:</strong> Sales Leader (2016–Present) | <strong>Sectors:</strong> FMCG (Nestlé, CavinKare), Telecom (Airtel)</p>
+        <p><strong>Objective:</strong> Execute innovative projects for market leadership.</p>
+        <p><strong>Key Achievements:</strong></p>
+        <ul>
+          <li>Increased Airtel digital adoption by 25% in rural areas.</li>
+          <li>Achieved 120% YoY growth via Mahakumbh 2025.</li>
+          <li>Expanded CavinKare retail footprint by 15%.</li>
+        </ul>
+        <p><strong>Impact:</strong> Positioned brands as innovators and boosted market share.</p>
       </div>
       <div class="chart-container">
         <img src="/growth-chart.png" alt="Sales Growth Chart" class="chart">
@@ -176,12 +243,10 @@
       let current = '';
       sections.forEach(section => {
         const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
         if (scrollY >= (sectionTop - 200)) {
           current = section.getAttribute('id');
         }
       });
-
       if (current) {
         document.querySelectorAll('.tab').forEach(tab => {
           tab.classList.remove('active');
@@ -192,19 +257,19 @@
       }
     });
 
-    // Add loading animation for project cards
-    document.addEventListener('DOMContentLoaded', () => {
-      const projectCards = document.querySelectorAll('.project-card');
-      projectCards.forEach((card, index) => {
-        card.style.opacity = '0';
-        card.style.transform = 'translateY(20px)';
-        setTimeout(() => {
-          card.style.transition = 'all 0.6s ease';
-          card.style.opacity = '1';
-          card.style.transform = 'translateY(0)';
-        }, index * 100);
+    // Project tab switching
+    document.querySelectorAll('.tab-button').forEach(button => {
+      button.addEventListener('click', () => {
+        const tab = button.getAttribute('data-tab');
+        document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+        button.classList.add('active');
+        document.getElementById(tab).classList.add('active');
       });
     });
+
+    // Initial active tab
+    document.querySelector('.tab-button.active').click();
   </script>
 </body>
 </html>
