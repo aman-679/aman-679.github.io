@@ -1,56 +1,30 @@
-# Sales Team Leadership & Mentorship Impact (2022–2025)
+# Sales Team Leadership & Impact
 
-**Role**: Area Sales Manager  
-**Sectors**: FMCG – Food, Personal Care | Telecom  
-**Regions Covered**: North & Central India  
-**Duration**: 2022–2025
+## Overview
+**Role**: Sales Leader (2016–Present)  
+**Sectors**: FMCG (Nestlé, CavinKare), Telecom (Airtel)  
+**Regions**: North & Central India
 
----
+## Objective
+Build and lead high-performing sales teams for execution excellence.
 
-## 🧭 Objective
+## Strategy
+- Led teams of 12 PSRs with focused training programs.
+- Mentored 7+ interns, with 80% transitioning to officer roles.
+- Implemented productivity-boosting initiatives across teams.
 
-To build, coach, and scale high-performing sales teams while driving productivity, talent development, and long-term career growth across distributor territories.
+## Key Achievements
+- Improved team productivity by 20% through training.
+- Transitioned 80% of interns to permanent roles.
+- Achieved 100% target compliance with motivated teams.
 
----
+## Impact
+Created a robust pipeline of talent and enhanced sales outcomes.
 
-## 🚀 Strategy
+## Skills Demonstrated
+- Team Leadership
+- Mentorship
+- Performance Coaching
+- Execution Discipline
 
-- Led a team of 12 PSRs across multiple territories, focusing on beat discipline, outlet coverage, and sales conversion.
-- Conducted regular training sessions for distributor sales staff to improve product knowledge and execution.
-- Mentored 7+ interns/trainees through structured onboarding and field immersion programs.
-- Implemented performance tracking dashboards and productivity KPIs.
-
----
-
-## 📈 Key Achievements
-
-| Initiative                  | Outcome                          | Impact                        |
-|----------------------------|----------------------------------|-------------------------------|
-| **Intern Mentorship**      | 80% transitioned to officer roles | Built future-ready talent     |
-| **Team Productivity Boost**| +20% improvement in coverage & billing | Enhanced sales efficiency     |
-| **Distributor Staff Training** | Improved execution quality     | Stronger outlet relationships |
-
-- Created a culture of ownership, learning, and execution excellence.
-- Fostered cross-functional collaboration with marketing and supply chain teams.
-
----
-
-## 🧠 Skills Demonstrated
-
-- Team Leadership & Coaching  
-- Talent Development & Mentorship  
-- Sales Productivity Optimization  
-- Training Design & Delivery  
-- Performance Management & KPI Tracking
-
----
-
-## 📎 Supporting Materials
-
-> _Note: Training decks, onboarding guides, or performance dashboards can be added here in future updates._
-
----
-
-## 🔁 Reflection
-
-This phase solidified my leadership philosophy — empowering teams through clarity, coaching, and accountability. I take pride in building future leaders and driving consistent performance across diverse markets.
+[Back to Portfolio](/)
