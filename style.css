@@ -73,7 +73,7 @@ main {
   padding: 40px 20px;
 }
 
-.section {
+..section {
   background: rgba(255, 255, 255, 0.85); /* Glass overlay */
   backdrop-filter: blur(10px);
   margin-bottom: 40px;
