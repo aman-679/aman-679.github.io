@@ -9,18 +9,22 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="tabs">
-    <a href="#about" class="tab active">About</a>
-    <a href="#skills" class="tab">Skills</a>
-    <a href="#journey" class="tab">Journey</a>
-    <a href="#projects" class="tab">Projects</a>
-    <a href="#connect" class="tab">Connect</a>
-  </nav>
-  <main>
-    <section id="about" class="section">
+  <header class="hero">
+    <nav class="tabs">
+      <a href="#about" class="tab active">About</a>
+      <a href="#skills" class="tab">Skills</a>
+      <a href="#journey" class="tab">Journey</a>
+      <a href="#projects" class="tab">Projects</a>
+      <a href="#connect" class="tab">Connect</a>
+    </nav>
+    <div class="hero-content">
       <h1 class="ribbon">Aman Verma <span class="ribbon-accent">Sales Leader</span></h1>
       <p class="title">9+ Years in FMCG & Telecom | Territory Growth Expert</p>
       <img src="/profile.jpg" alt="Aman Verma Headshot" class="headshot">
+    </div>
+  </header>
+  <main>
+    <section id="about" class="section">
       <p>Results-driven leader with 9+ years in FMCG (Nestlé, CavinKare) and Telecom (Airtel), managing ₹30M+ portfolios. Specializing in scaling distribution, high-impact activations, and team mentoring for double-digit growth. Targeting Area Sales Manager roles at PepsiCo or Godrej.</p>
     </section>
     <section id="skills" class="section">
@@ -68,45 +72,4 @@
           <p>Led 12 PSRs; mentored interns.</p>
           <a href="sales-team-leadership-impact/README.md">View Details</a>
         </div>
-        <div class="project-card">
-          <h3>Strategic Projects</h3>
-          <p>Airtel Payments Bank, Nestlé Mahakumbh.</p>
-          <a href="strategic-projects-airtel-nestle-cavinkare/README.md">View Details</a>
-        </div>
-      </div>
-      <img src="growth-chart.png" alt="Sales Growth Chart" class="chart">
-    </section>
-    <section id="connect" class="section">
-      <h2 class="ribbon">Let's Connect <span class="ribbon-accent">Opportunities</span></h2>
-      <p>Targeting ASM/Regional roles in FMCG or Telecom. Reach out!</p>
-      <p><a href="https://linkedin.com/in/yourprofile">LinkedIn</a> | <a href="mailto:aman@example.com">Email</a></p>
-      <a href="/Aman_Verma_Resume.pdf" class="download-btn">Download Resume</a>
-      <p><em>© 2025 Aman Verma. Built on GitHub Pages.</em></p>
-    </section>
-  </main>
-  <script>
-    // Smooth scrolling and tab activation
-    document.querySelectorAll('.tab').forEach(tab => {
-      tab.addEventListener('click', (e) => {
-        e.preventDefault();
-        const target = document.querySelector(tab.getAttribute('href'));
-        target.scrollIntoView({ behavior: 'smooth' });
-        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-        tab.classList.add('active');
-      });
-    });
-
-    // Update active tab on scroll
-    window.addEventListener('scroll', () => {
-      document.querySelectorAll('.section').forEach(section => {
-        const tab = document.querySelector(`.tab[href="#${section.id}"]`);
-        const rect = section.getBoundingClientRect();
-        if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
-          document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-          tab.classList.add('active');
-        }
-      });
-    });
-  </script>
-</body>
-</html>
+        <div
