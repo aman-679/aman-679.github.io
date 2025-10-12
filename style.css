@@ -16,7 +16,6 @@ body {
   overflow-x: hidden;
   backdrop-filter: blur(2px); /* Slight global blur for effect */
 }
-}
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
