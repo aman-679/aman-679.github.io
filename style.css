@@ -1,179 +1,229 @@
-/* Modernized CSS for Aman's 2025 portfolio in BMW racing colors (blue, red, white) */
+/* Minimalistic CSS inspired by Naukri: tabs, ribbons, smooth scroll for 2025 portfolio */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap');
+
+* {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: #FFFFFF; /* White for clean, premium look */
-  color: #1A252F; /* Dark slate for readability */
+  background: #F8F9FA; /* Light gray background */
+  color: #2C3E50; /* Dark gray text */
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
-.wrapper {
-  display: flex;
-  min-height: 100vh;
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-.sidebar {
-  width: 300px;
-  min-width: 260px;
-  background: linear-gradient(135deg, #003087 70%, #D52B1E 100%); /* BMW blue to red gradient */
-  color: #FFFFFF;
+::-webkit-scrollbar-track {
+  background: #F8F9FA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #3498DB, #E74C3C); /* Soft blue to red gradient */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3498DB;
+}
+
+/* Tabs Navigation (Naukri-inspired) */
+.tabs {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  padding: 15px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.tab {
+  color: #7F8C8D; /* Muted gray */
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.tab:hover, .tab.active {
+  color: #3498DB; /* Soft blue */
+  background: rgba(52, 152, 219, 0.1);
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 40px 20px;
-  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.sidebar .logo {
-  width: 90px;
-  height: 90px;
-  background: rgba(255, 255, 255, 0.2); /* Subtle white overlay */
+.section {
+  background: #FFFFFF;
+  margin-bottom: 40px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ribbon Effect */
+.ribbon {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+  color: #2C3E50;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.ribbon-accent {
+  background: #E74C3C; /* Red ribbon */
+  color: #FFFFFF;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+  position: relative;
+  top: -2px;
+}
+
+.ribbon:before, .ribbon:after {
+  content: '';
+  position: absolute;
+  background: #E74C3C;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+}
+
+.ribbon:before {
+  left: 0;
+  top: -10px;
+}
+
+.ribbon:after {
+  right: -10px;
+  bottom: -10px;
+  transform: rotate(-45deg);
+}
+
+/* Title and Headshot */
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3em;
+  color: #3498DB;
+  margin-bottom: 20px;
+}
+
+.headshot {
+  max-width: 150px;
   border-radius: 50%;
   margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Poppins', sans-serif;
-  font-size: 2.6em;
-  font-weight: 700;
-  color: #FFFFFF;
-  border: 2px solid #D52B1E; /* Red accent */
 }
 
-.sidebar h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.8em;
-  margin: 0 0 15px 0;
-  color: #FFFFFF;
-}
-
-.sidebar p {
-  font-size: 1.1em;
-  margin: 0 0 15px 0;
-  line-height: 1.6;
-  color: #E6E9ED; /* Light gray for contrast */
-  text-align: center;
-}
-
-.sidebar nav {
-  margin-top: 30px;
-  width: 100%;
-}
-
-.sidebar nav a {
-  display: block;
-  color: #E6E9ED;
-  text-decoration: none;
-  font-size: 1.1em;
-  margin: 12px 0;
-  padding: 8px 15px;
-  border-radius: 8px;
-  transition: all 0.3s ease; /* Smooth micro-animation */
-}
-
-.sidebar nav a:hover {
-  background: #D52B1E; /* Red on hover */
-  color: #FFFFFF;
-  transform: scale(1.03); /* Subtle scale effect */
-}
-
-.sidebar .download {
-  margin-top: 35px;
-}
-
-.sidebar .download a {
-  display: inline-block;
-  background: #D52B1E; /* Red button */
-  color: #FFFFFF;
-  font-weight: 600;
-  padding: 10px 20px;
-  border-radius: 30px;
-  text-decoration: none;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease;
-}
-
-.sidebar .download a:hover {
-  background: #003087; /* Blue on hover */
-  transform: translateY(-2px); /* Lift effect */
-}
-
-.content {
-  flex: 1;
-  padding: 50px 40px;
-  background: #FFFFFF;
-  min-width: 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-.content h2 {
-  color: #003087; /* Blue for headings */
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.9em;
-  margin-bottom: 20px;
-}
-
-.content p {
-  line-height: 1.7;
-  font-size: 1.05em;
-}
-
-.content ul {
+ul {
   list-style-type: none;
   padding: 0;
 }
 
-.content ul li {
+ul li {
   margin: 10px 0;
   padding-left: 20px;
   position: relative;
 }
 
-.content ul li:before {
+ul li:before {
   content: '✔';
-  color: #D52B1E; /* Red checkmarks */
+  color: #3498DB;
   position: absolute;
   left: 0;
 }
 
-.content img {
-  max-width: 100%;
-  border-radius: 8px;
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
-@media (max-width: 800px) {
-  .wrapper {
+.project-card {
+  background: #F8F9FA;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  color: #3498DB;
+  margin-bottom: 10px;
+}
+
+.project-card a {
+  color: #E74C3C;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+.chart {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.download-btn {
+  display: inline-block;
+  background: #E74C3C;
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  background: #3498DB;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .tabs {
     flex-direction: column;
+    padding: 10px 0;
   }
-  .sidebar {
-    width: 100%;
-    min-width: 0;
-    flex-direction: row;
-    align-items: center;
+  .tab {
+    margin: 5px 0;
+    padding: 8px 15px;
+  }
+  .section {
     padding: 20px;
-    height: auto;
-    justify-content: space-between;
   }
-  .sidebar .logo {
-    margin: 0 20px 0 0;
-    font-size: 2em;
-    width: 70px;
-    height: 70px;
+  .project-grid {
+    grid-template-columns: 1fr;
   }
-  .sidebar nav {
-    margin-top: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  h1 {
+    font-size: 1.8em;
   }
-  .sidebar nav a {
-    margin: 5px;
-    padding: 6px 12px;
-  }
-  .content {
-    padding: 30px 5vw;
+  h2 {
+    font-size: 1.5em;
   }
 }
-"Updated style.css with BMW colors for 2025,"
