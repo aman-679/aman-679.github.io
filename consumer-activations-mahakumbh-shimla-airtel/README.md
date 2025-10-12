@@ -1,56 +1,31 @@
-# Consumer Activations: Mahakumbh, Shimla Hill & Airtel Cashless Village (2019–2022)
+# Consumer Activations: Nestlé Mahakumbh, Shimla Hill & Airtel Cashless Village
 
-**Role**: Area Sales Manager  
-**Sectors**: FMCG – Food & Personal Care | Telecom  
-**Regions Covered**: North & Central India  
-**Duration**: 2019–2022
+## Overview
+**Role**: Sales Leader (2016–Present)  
+**Sectors**: FMCG (Nestlé), Telecom (Airtel)  
+**Regions**: North & Central India
 
----
+## Objective
+Drive visibility, consumer pull, and incremental sales through marquee activations.
 
-## 🧭 Objective
+## Strategy
+- Designed Nestlé's Mahakumbh 2025 campaign targeting 120% YoY growth.
+- Executed Airtel's Cashless Village project promoting digital payments.
+- Led Shimla Hill activation boosting chocolate sales by 120% YoY.
+- Implemented ROI-driven promotions and merchandising plans.
 
-To drive consumer engagement, brand visibility, and incremental sales through high-impact activation campaigns tailored to regional audiences and strategic growth opportunities.
+## Key Achievements
+- Achieved 120% YoY growth in chocolate sales via Shimla Hill.
+- Increased consumer engagement by 15% through Mahakumbh 2025.
+- Expanded Airtel payment adoption in rural areas by 25%.
 
----
+## Impact
+Enhanced brand presence and delivered sustainable revenue uplifts across channels.
 
-## 🚀 Strategy
+## Skills Demonstrated
+- Consumer Activation Planning
+- ROI Analysis
+- Cross-Functional Execution
+- Market Trend Adaptation
 
-- Designed and executed marquee activations aligned with brand goals and seasonal opportunities.
-- Collaborated with marketing and distributor teams to deploy assets, sampling, and merchandising.
-- Integrated activation plans into beat-level execution and ROI tracking.
-- Leveraged local festivals, cultural events, and digital tools to maximize consumer pull.
-
----
-
-## 📈 Key Campaigns & Achievements
-
-| Campaign                     | Brand     | Outcome                        | Impact                  |
-|-----------------------------|-----------|--------------------------------|-------------------------|
-| **Mahakumbh 2025 Activation** | Nestlé    | Mass sampling & visibility     | 100K+ consumer reach    |
-| **Shimla Hill Activation**   | Nestlé    | Premium outlet push            | 120% YoY growth         |
-| **Cashless Village Project** | Airtel    | Digital payments rollout       | 100% merchant onboarding |
-
-- Delivered double-digit sales growth across activation zones.
-- Improved brand recall and consumer conversion through targeted messaging.
-
----
-
-## 🧠 Skills Demonstrated
-
-- Activation Planning & Execution  
-- Cross-functional Collaboration  
-- ROI-Driven Promotion Strategy  
-- Consumer Engagement & Sampling  
-- Digital Enablement (Telecom)
-
----
-
-## 📎 Supporting Materials
-
-> _Note: Campaign posters, sampling photos, or activation dashboards can be added here in future updates._
-
----
-
-## 🔁 Reflection
-
-These activations showcased my ability to blend strategic thinking with on-ground execution — delivering measurable impact in brand visibility, consumer engagement, and sales uplift across diverse geographies.
+[Back to Portfolio](/)
