@@ -1,18 +1,20 @@
-/* Minimalistic CSS inspired by Naukri: tabs, ribbons, smooth scroll for 2025 portfolio */
+/* Glassmorphism-inspired CSS with Canva-like background for 2025 portfolio */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap');
 
 * {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: #F8F9FA; /* Light gray background */
-  color: #2C3E50; /* Dark gray text */
+  background: linear-gradient(135deg, #ECF0F1 0%, #D5DBDB 100%); /* Subtle Canva-like gradient */
+  color: #2C3E50;
   line-height: 1.6;
   overflow-x: hidden;
+  backdrop-filter: blur(2px); /* Slight global blur for effect */
 }
 
 /* Custom Scrollbar */
@@ -21,11 +23,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #F8F9FA;
+  background: #ECF0F1;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #3498DB, #E74C3C); /* Soft blue to red gradient */
+  background: linear-gradient(to bottom, #3498DB, #E74C3C);
   border-radius: 4px;
 }
 
@@ -33,20 +35,23 @@ body {
   background: #3498DB;
 }
 
-/* Tabs Navigation (Naukri-inspired) */
+/* Tabs Navigation */
 .tabs {
   display: flex;
   justify-content: center;
-  background: #FFFFFF;
+  background: rgba(255, 255, 255, 0.9); /* Glass effect */
+  backdrop-filter: blur(10px);
   padding: 15px 0;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   position: sticky;
   top: 0;
   z-index: 10;
+  border-radius: 10px;
+  margin: 10px;
 }
 
 .tab {
-  color: #7F8C8D; /* Muted gray */
+  color: #7F8C8D;
   text-decoration: none;
   font-size: 1.1em;
   padding: 10px 20px;
@@ -54,11 +59,12 @@ body {
   border-radius: 25px;
   transition: all 0.3s ease;
   font-weight: 600;
+  backdrop-filter: blur(5px);
 }
 
 .tab:hover, .tab.active {
-  color: #3498DB; /* Soft blue */
-  background: rgba(52, 152, 219, 0.1);
+  color: #3498DB;
+  background: rgba(52, 152, 219, 0.2);
 }
 
 main {
@@ -68,13 +74,15 @@ main {
 }
 
 .section {
-  background: #FFFFFF;
+  background: rgba(255, 255, 255, 0.85); /* Glass overlay */
+  backdrop-filter: blur(10px);
   margin-bottom: 40px;
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.05);
   position: relative;
   overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
 }
 
 /* Ribbon Effect */
@@ -88,7 +96,7 @@ main {
 }
 
 .ribbon-accent {
-  background: #E74C3C; /* Red ribbon */
+  background: #E74C3C;
   color: #FFFFFF;
   padding: 5px 10px;
   border-radius: 5px;
@@ -129,6 +137,7 @@ main {
   max-width: 150px;
   border-radius: 50%;
   margin-bottom: 20px;
+  border: 2px solid rgba(52, 152, 219, 0.5); /* Blue accent border */
 }
 
 ul {
@@ -157,10 +166,11 @@ ul li:before {
 }
 
 .project-card {
-  background: #F8F9FA;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
   transition: transform 0.3s ease;
 }
 
@@ -186,6 +196,7 @@ ul li:before {
   max-width: 100%;
   border-radius: 8px;
   margin-top: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
 .download-btn {
@@ -196,7 +207,7 @@ ul li:before {
   padding: 10px 20px;
   border-radius: 30px;
   text-decoration: none;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
   transition: all 0.3s ease;
 }
 
