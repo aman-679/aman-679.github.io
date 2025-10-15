@@ -1,152 +1,53 @@
-/* Apple-style Glass & Shadow Portfolio */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+/* style.css - Glass & Shadow (Apple-inspired) */
+:root{
+  --bg:#f4f6fb; --glass:rgba(255,255,255,0.55); --card:#ffffff;
+  --accent:#0b6cf2; --muted:#5b6773; --radius:16px; --shadow:0 10px 30px rgba(11,28,60,0.08);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+  color:#0f1724;
 }
-
-body {
-  background: linear-gradient(145deg, #f5f6f7, #e9ecf1);
-  color: #333;
-  line-height: 1.6;
-  scroll-behavior: smooth;
-}
-
-.glass-header {
-  backdrop-filter: blur(12px);
-  background: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  padding: 40px 10%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  max-width: 1000px;
-}
-
-.profile-photo {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid rgba(255, 255, 255, 0.8);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-}
-
-.header-text h1 {
-  font-family: 'SF Pro Display', sans-serif;
-  font-size: 2.2em;
-  color: #111;
-}
-
-.header-text h2 {
-  color: #444;
-  font-weight: 600;
-}
-
-.header-links a {
-  margin-right: 15px;
-  color: #007aff;
-  text-decoration: none;
-}
-
-.header-links a:hover {
-  text-decoration: underline;
-}
-
-.glass-card {
-  background: rgba(255, 255, 255, 0.65);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(15px);
-  border-radius: 20px;
-  margin: 40px auto;
-  padding: 40px;
-  max-width: 900px;
-  transition: all 0.3s ease;
-}
-
-.glass-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-}
-
-.glass-card h3 {
-  margin-bottom: 20px;
-  color: #111;
-  border-left: 4px solid #007aff;
-  padding-left: 10px;
-  font-family: 'SF Pro Display', sans-serif;
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-}
-
-blockquote {
-  background: rgba(255, 255, 255, 0.4);
-  border-left: 4px solid #007aff;
-  padding: 15px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  font-style: italic;
-}
-
-.contact {
-  text-align: center;
-}
-
-.resume-btn {
-  display: inline-block;
-  margin-top: 15px;
-  background: #007aff;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.resume-btn:hover {
-  background: #005bb5;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  color: #666;
-  font-size: 0.9em;
-}
-
-/* Smooth fade-in animation */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.8s forwards;
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .header-container {
-    flex-direction: column;
-    text-align: center;
-  }
-  .profile-photo {
-    width: 120px;
-    height: 120px;
-  }
+*{box-sizing:border-box} html,body{height:100%;margin:0;background:linear-gradient(180deg,#f7f9fc,#eef4ff);-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+.header, .nav, .hero {max-width:1100px;margin:0 auto;padding:18px}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:12px 0}
+.brand{font-weight:700;font-size:18px;color:#06294e}
+.nav-links a{margin-left:18px;color:#0b3b6b;font-weight:600}
+.hero{padding:26px;border-radius:14px;background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.4));backdrop-filter: blur(8px);box-shadow:var(--shadow);display:flex;gap:20px;flex-wrap:wrap}
+.hero-inner{display:flex;gap:20px;width:100%}
+.hero-left{flex:1 1 420px;min-width:260px}
+.hero-right{flex:1 1 360px;min-width:260px}
+.avatar{width:120px;height:120px;border-radius:20px;object-fit:cover;border:3px solid rgba(255,255,255,0.7);box-shadow:0 6px 20px rgba(11,28,60,0.06)}
+.name{font-size:28px;margin:6px 0 2px 0;font-weight:700;color:#06294e}
+.tag{margin:0;color:var(--muted);font-weight:600}
+.headline{margin-top:8px;color:#234;opacity:0.9}
+.cta-row{display:flex;gap:12px;margin-top:12px}
+.btn{padding:10px 16px;border-radius:999px;font-weight:700;border:1px solid rgba(11,108,242,0.12);background:transparent}
+.btn.primary{background:var(--accent);color:#fff;box-shadow:0 10px 24px rgba(11,108,242,0.16)}
+.btn.hollow{background:transparent;color:var(--accent);border:1px solid rgba(11,108,242,0.12)}
+.kpi-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.kpi{background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.45));padding:12px;border-radius:12px;box-shadow:0 6px 18px rgba(11,28,60,0.04)}
+.kpi-value{font-weight:800;font-size:20px;color:#06294e}
+.kpi-label{font-size:12px;color:var(--muted)}
+.container{max-width:1100px;margin:22px auto;padding:0 18px}
+.section{margin:24px 0}
+.section-title{font-size:18px;margin:0 0 12px 0;padding-left:10px;border-left:5px solid var(--accent);padding-left:12px}
+.card{background:var(--card);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);opacity:0;transform:translateY(12px);transition:all .6s cubic-bezier(.2,.9,.25,1)}
+.card.visible{opacity:1;transform:none}
+.job-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.meta{font-size:13px;color:var(--muted)}
+.job-badge{background:linear-gradient(180deg,#eaf3ff,#fff);padding:8px 12px;border-radius:999px;font-weight:700;color:var(--accent);font-size:13px}
+.job-list{margin:12px 0 0 18px}
+.job-list li{margin:8px 0;color:#0f1724;line-height:1.5}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.testimonial-wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.testimonial{padding:14px;border-left:4px solid var(--accent)}
+.quote{font-style:italic;color:#06294e}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.site-footer{margin-top:28px;padding:18px;border-radius:10px;max-width:1100px;margin-left:auto;margin-right:auto;background:linear-gradient(180deg,#06294e,#033b6a);color:#fff}
+.footer-inner{display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap}
+@media (max-width:880px){
+  .hero-inner{flex-direction:column;align-items:flex-start}
+  .kpi-grid{grid-template-columns:repeat(2,1fr)}
+  .two-col{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
 }
