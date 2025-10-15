@@ -7,7 +7,6 @@
   <meta name="keywords" content="Sales Leader, FMCG, Telecom, Territory Growth, RTM, Channel Development, Consumer Activations, Distributor P&L Management">
   <title>Aman Verma | Sales & Distribution Leader</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Favicon: Inline SVG for AV logo -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' x='0.5em' font-size='90'>AV</text></svg>">
 </head>
 <body>
@@ -78,18 +77,40 @@
 
     <section id="achievements" class="section">
       <h2 class="ribbon">Key Achievements <span class="ribbon-accent">Highlights</span></h2>
-      <div class="kpi-strip">
-        <span>📈 +22% Coverage</span>
-        <span>🏪 ₹30M+ Portfolio</span>
-        <span>🚀 120% YoY Growth</span>
+      <div class="access-menu toggle-window">
+        <button class="tab-button active" data-tab="nestle">Nestlé</button>
+        <button class="tab-button" data-tab="cavinkare">CavinKare</button>
+        <button class="tab-button" data-tab="airtel">Airtel</button>
       </div>
-      <div class="achievement-card">
-        <h3>Distributor & P&L Management</h3>
-        <p>95% billed outlets | reduced receivables overdue by 20% | improved distributor profitability by ~15% through SKU mix and inventory optimization.</p>
+      <div class="tab-content active" id="nestle">
+        <ul>
+          <li>📈 +22% Coverage (165 new outlets)</li>
+          <li>🏪 ₹30M+ Portfolio</li>
+          <li>🚀 120% YoY Growth (Shimla Hill)</li>
+          <li>+106% Asset ROI</li>
+        </ul>
       </div>
-      <div class="achievement-card">
-        <h3>Channel Development</h3>
-        <p>Unlocked 15–20% incremental sales via chemist, HoReCa and institutional gifting channels; scaled gifting to 3–9 showrooms.</p>
+      <div class="tab-content" id="cavinkare">
+        <ul>
+          <li>📈 114% Target Achievement</li>
+          <li>🏪 100+ Placements</li>
+          <li>🚀 15% Incremental Growth</li>
+        </ul>
+      </div>
+      <div class="tab-content" id="airtel">
+        <ul>
+          <li>📈 20k+ SIM Swaps</li>
+          <li>🏪 30%+ Port-in Share</li>
+          <li>🚀 400+ Households Onboarded</li>
+        </ul>
+      </div>
+      <div class="chart-container" id="growth-chart">
+        <h3 class="text-center">Growth Performance</h3>
+        <div class="bar-chart" id="bar-chart">
+          <div class="bar" data-tab="nestle" data-tooltip="Nestlé: 20% growth from ₹25M to ₹30M" style="width: 0; background: #E74C3C;"><span>20%</span></div>
+          <div class="bar" data-tab="cavinkare" data-tooltip="CavinKare: 15% incremental growth" style="width: 0; background: #2ECC71;"><span>15%</span></div>
+          <div class="bar" data-tab="airtel" data-tooltip="Airtel: 30%+ port-in share" style="width: 0; background: #9B59B6;"><span>30%</span></div>
+        </div>
       </div>
     </section>
 
@@ -109,7 +130,7 @@
     <section id="testimonials" class="section">
       <h2 class="ribbon">Testimonials <span class="ribbon-accent">Feedback</span></h2>
       <div class="testimonial-card">
-        <p>“Aman’s strategic thinking during Mahakumbh 2025 was exceptional. His ability to scale retail activations is unmatched.” — RSH, Nestlé</p>
+        <p>“Aman’s strategic thinking during Mahakumbh 2025 was exceptional. His ability to scale retail activations is unmatched.” — Zonal Manager, Nestlé</p>
       </div>
       <div class="testimonial-card">
         <p>“He transformed our channel profitability in less than 6 months. A true leader in distribution.” — Distributor Partner, Prayagraj</p>
@@ -126,7 +147,7 @@
           <tr>
             <th>Industry</th>
             <th>Fit Strength</th>
-            <th>My Fitment Proposal</th>
+            <th>Why You Fit</th>
             <th>Typical Roles</th>
             <th>Strategic Upside</th>
           </tr>
@@ -180,12 +201,12 @@
 
     <section id="connect" class="section">
       <h2 class="ribbon">Contact <span class="ribbon-accent">Get in Touch</span></h2>
-      <p>Targeting senior and cross-functional roles in consumer sectors. Let's discuss.</p>
+      <p>Targeting senior and cross-functional roles in consumer sectors. Let's discuss how my experience can contribute to your team.</p>
       <div class="contact-links">
         <a href="mailto:amanvarma679@outlook.com" class="download-btn">Email</a>
         <a href="https://www.linkedin.com/in/aman-verma-bb9526ba/" class="download-btn" target="_blank">LinkedIn</a>
         <a href="/Aman_Verma_Resume.pdf" class="download-btn" download>Download Resume</a>
-        <a href="https://calendly.com/your-calendly-link" class="download-btn" target="_blank">Schedule a Call</a>
+        <a href="https://calendly.com/amanvarma679/meeting?month=2025-10&hide_gdpr_banner=1&primary_color=0058A3&text_color=FFFFFF&background_color=252423" class="download-btn" target="_blank">Schedule a Call</a>
       </div>
       <p class="footer-note">Figures represent territory-level results achieved during my tenure.</p>
     </section>
@@ -229,12 +250,15 @@
           if (project === tab) {
             const width = bar.querySelector('span').textContent.replace('%', '');
             bar.style.width = `${width}%`;
-          } else bar.style.width = '0';
+            bar.setAttribute('title', bar.getAttribute('data-tooltip'));
+          } else {
+            bar.style.width = '0';
+            bar.removeAttribute('title');
+          }
         });
       });
     });
 
-    // Fade-in animations
     window.addEventListener('load', () => {
       document.querySelectorAll('.section').forEach((el, index) => {
         setTimeout(() => {
