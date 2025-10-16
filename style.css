@@ -25,16 +25,16 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #0058A3, #E74C3C);
+  background: linear-gradient(to bottom, #3498DB, #E74C3C);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #0058A3;
+  background: #3498DB;
 }
 
 .header {
-  background: linear-gradient(135deg, #FFFFFF 0%, #F8F9FA 100%);
+  background: #FFFFFF;
   padding: 20px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
@@ -60,7 +60,7 @@ body {
 }
 
 .tab.active {
-  background: #0058A3;
+  background: #3498DB;
   color: white;
 }
 
@@ -68,9 +68,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 
 .headshot {
@@ -118,7 +115,7 @@ body {
   transform: translateY(-50%);
   width: 6px;
   height: 6px;
-  background: #0058A3;
+  background: #3498DB;
   border-radius: 50%;
 }
 
@@ -128,8 +125,6 @@ body {
   background: white;
   border-radius: 12px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .experience-card, .achievement-card, .testimonial-card {
@@ -169,7 +164,7 @@ body {
 
 .download-btn {
   display: inline-block;
-  background: #0058A3;
+  background: #E74C3C;
   color: white;
   padding: 10px 20px;
   border-radius: 20px;
@@ -179,7 +174,7 @@ body {
 }
 
 .download-btn:hover {
-  background: #003A75;
+  background: #C0392B;
 }
 
 .footer-note {
@@ -207,7 +202,7 @@ body {
 
 .evidence-link {
   font-size: 0.8em;
-  color: #0058A3;
+  color: #3498DB;
   text-decoration: none;
   margin-left: 5px;
 }
@@ -226,6 +221,7 @@ body {
 
 .bar {
   height: 30px;
+  background: #E74C3C;
   border-radius: 5px;
   transition: width 0.8s ease-out;
   position: relative;
@@ -242,36 +238,6 @@ body {
   font-size: 14px;
 }
 
-.bar[data-tab="nestle"] {
-  background: #E74C3C;
-}
-
-.bar[data-tab="cavinkare"] {
-  background: #2ECC71;
-}
-
-.bar[data-tab="airtel"] {
-  background: #9B59B6;
-}
-
-.bar:hover {
-  opacity: 0.9;
-}
-
-.bar[data-tooltip]:hover:after {
-  content: attr(data-tooltip);
-  position: absolute;
-  top: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #2C3E50;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 4px;
-  font-size: 0.9em;
-  white-space: nowrap;
-}
-
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -283,6 +249,24 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.accordion summary {
+  cursor: pointer;
+  font-weight: 600;
+  position: relative;
+  padding-right: 20px;
+}
+
+.accordion summary::after {
+  content: '+';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.accordion.open summary::after {
+  content: '-';
 }
 
 @media (max-width: 600px) {
