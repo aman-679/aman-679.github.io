@@ -200,6 +200,46 @@ body {
   background: #F0F0F0;
 }
 
+.fit-matrix {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.matrix-card {
+  background: #F9F9F9;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.matrix-card summary {
+  padding: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.3s;
+}
+
+.matrix-card summary::after {
+  content: '+';
+  position: absolute;
+  right: 15px;
+}
+
+.matrix-card.open summary::after {
+  content: '-';
+}
+
+.matrix-card .card-content {
+  padding: 15px;
+  display: none;
+}
+
+.matrix-card.open .card-content {
+  display: block;
+}
+
 .contact-links {
   display: flex;
   gap: 10px;
@@ -307,7 +347,7 @@ body {
   .headshot {
     margin-bottom: 20px;
   }
-  .project-grid {
+  .project-grid, .fit-matrix {
     grid-template-columns: 1fr;
   }
   .bar-chart {
