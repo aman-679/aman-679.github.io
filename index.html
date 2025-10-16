@@ -12,42 +12,31 @@
 <body>
   <header class="header">
     <nav class="tabs">
-      <a href="#open-to-work" class="tab">Open to Work</a>
-      <a href="#about" class="tab">About</a>
+      <a href="#about" class="tab active">About</a>
       <a href="#experience" class="tab">Experience</a>
-      <a href="#achievements" class="tab">Achievements</a>
+      <a href="#projects" class="tab">Projects</a>
       <a href="#skills" class="tab">Skills</a>
       <a href="#testimonials" class="tab">Testimonials</a>
       <a href="#connect" class="tab">Connect</a>
     </nav>
     <div class="header-content">
       <img src="/profile.jpg" alt="Aman Verma Headshot" class="headshot">
-      <h1 class="ribbon">Aman Verma <span class="ribbon-accent">Senior FMCG Sales Leader</span></h1>
-      <p class="title">₹30M+ Business Managed | Route-to-Market & Channel Expansion | On-Trade & HoReCa Growth</p>
+      <h1 class="ribbon">Aman Verma <span class="ribbon-accent">Sales & Distribution Leader</span></h1>
+      <p class="title">FMCG & Telecom | 9+ Yrs | Territory Growth | Channel Development | Consumer Activations | Distributor P&L Management</p>
       <p class="timeline-snippet">2016–2025: Leading Sales & Distribution Roles</p>
     </div>
   </header>
 
   <main>
-    <section id="open-to-work" class="section">
-      <h2 class="ribbon">Open to Work <span class="ribbon-accent">Seeking Opportunities</span></h2>
-      <p>Targeting senior and cross-functional roles in consumer sectors, including Area Sales Manager, Regional Business Manager, Channel Development Lead, or Zonal Business Manager in FMCG, Alco-Bev, Automotive, Building Materials, Retail, or Fintech industries. Let's discuss how my experience can contribute to your team.</p>
-      <div class="kpi-strip">
-        <span>📈 +22% Coverage</span>
-        <span>🏪 ₹30M+ Portfolio</span>
-        <span>🚀 120% YoY Growth</span>
-      </div>
-    </section>
-
-    <section id="about" class="section">
+    <section id="about" class="section fade-in">
       <p>Results-driven sales leader with 9+ years at Nestlé, CavinKare and Airtel, managing portfolios up to ₹30M. I specialise in territory growth, distributor P&L optimization, and high-impact retail activations that deliver measurable revenue and ROI improvements. I empower teams to drive sustainable growth.</p>
       <p>Global Relevance: Adaptable to international markets through cross-border sales experience and regional scalability in North & Central India.</p>
     </section>
 
-    <section id="experience" class="section">
+    <section id="experience" class="section fade-in">
       <h2 class="ribbon">Professional Experience <span class="ribbon-accent">Timeline</span></h2>
-      <div class="experience-card">
-        <h3>Senior Sales Officer — Nestlé India Ltd. | Prayagraj & Shimla | Jan 2019 – Jul 2025</h3>
+      <details class="accordion">
+        <summary>Senior Sales Officer — Nestlé India Ltd. | Prayagraj & Shimla | Jan 2019 – Jul 2025</summary>
         <ul>
           <li>Managed ₹30M+ territory; increased revenue from ₹25M to ₹30M (20% growth).</li>
           <li>Expanded outlet coverage by 22% (165 new outlets) through RTM and smart store initiatives.</li>
@@ -56,26 +45,26 @@
           <li>Asset utilization project (2024): 95% of cooling units billed; ~106% sales growth from asset activation.</li>
           <li>Mentored 7+ interns/trainees and trained distributor sales staff to improve field productivity.</li>
         </ul>
-      </div>
-      <div class="experience-card">
-        <h3>Sales Officer — CavinKare Pvt. Ltd. | Kanpur | Jan 2018 – Dec 2018</h3>
+      </details>
+      <details class="accordion">
+        <summary>Sales Officer — CavinKare Pvt. Ltd. | Kanpur | Jan 2018 – Dec 2018</summary>
         <ul>
           <li>Delivered ₹68.4L annual revenue (114% of target).</li>
           <li>Launched Skin Retail Range: secured 100+ outlet placements in Q1, driving 15% incremental growth within 6 months.</li>
           <li>Onboarded 56 new clients contributing to 35% of revenue.</li>
         </ul>
-      </div>
-      <div class="experience-card">
-        <h3>Territory Sales Officer — Bharti Airtel Ltd. | Ballia & surrounding UP | Jul 2016 – Nov 2017</h3>
+      </details>
+      <details class="accordion">
+        <summary>Territory Sales Officer — Bharti Airtel Ltd. | Ballia & surrounding UP | Jul 2016 – Nov 2017</summary>
         <ul>
           <li>Led 4G SIM swap campaign: 20,000+ SIM swaps during the campaign period to accelerate 4G adoption.</li>
           <li>MNP conversion campaign: achieved 30%+ port-in share in targeted territory.</li>
           <li>Airtel Payments Bank – Cashless Village pilot (Sanwara): onboarded 400+ households and 35+ merchants in a day.</li>
         </ul>
-      </div>
+      </details>
     </section>
 
-    <section id="achievements" class="section">
+    <section id="projects" class="section fade-in">
       <h2 class="ribbon">Key Achievements <span class="ribbon-accent">Highlights</span></h2>
       <div class="access-menu toggle-window">
         <button class="tab-button active" data-tab="nestle">Nestlé</button>
@@ -191,7 +180,7 @@
           <tr>
             <td>Fintech / Payments (India1 Payments)</td>
             <td>⭐⭐½</td>
-            <p>Channel development & rural market management experience fits semi-urban rollout & partner onboarding.</p>
+            <td>Channel development & rural market management experience fits semi-urban rollout & partner onboarding.</td>
             <td>Zonal Business Manager, Distribution Head</td>
             <td>Great diversification, but less sales-led in traditional sense</td>
           </tr>
@@ -251,10 +240,7 @@
             const width = bar.querySelector('span').textContent.replace('%', '');
             bar.style.width = `${width}%`;
             bar.setAttribute('title', bar.getAttribute('data-tooltip'));
-          } else {
-            bar.style.width = '0';
-            bar.removeAttribute('title');
-          }
+          } else bar.style.width = '0';
         });
       });
     });
@@ -264,6 +250,13 @@
         setTimeout(() => {
           el.classList.add('fade-in');
         }, index * 200);
+      });
+    });
+
+    // Accordion toggle for experience
+    document.querySelectorAll('.accordion').forEach(acc => {
+      acc.addEventListener('toggle', () => {
+        acc.classList.toggle('open');
       });
     });
   </script>
