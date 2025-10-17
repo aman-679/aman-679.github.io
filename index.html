@@ -11,6 +11,7 @@
 </head>
 <body>
   <header class="header">
+    <button class="menu-toggle">☰</button>
     <nav class="tabs">
       <a href="#about" class="tab">About</a>
       <a href="#experience" class="tab">Experience</a>
@@ -283,7 +284,7 @@
           <summary>Fintech / Payments (India1 Payments)</summary>
           <div class="card-content">
             <p><strong>Fit Strength:</strong> ⭐⭐½</p>
-            <p><strong>My Fitment Proposal:</strong> Channel development & rural market management experience fits semi-urban rollout & partner onboarding.</p>
+            <p><strong>Why You Fit:</strong> Channel development & rural market management experience fits semi-urban rollout & partner onboarding.</p>
             <p><strong>Typical Roles:</strong> Zonal Business Manager, Distribution Head</p>
             <p><strong>Strategic Upside:</strong> Great diversification, but less sales-led in traditional sense</p>
           </div>
@@ -300,7 +301,7 @@
         <a href="/Aman_Verma_Resume.pdf" class="download-btn" download>Download Resume</a>
         <a href="https://calendly.com/amanvarma679/meeting?month=2025-10&hide_gdpr_banner=1&primary_color=0058A3&text_color=FFFFFF&background_color=252423" class="download-btn" target="_blank">Schedule a Call</a>
       </div>
-      <p class="footer-note">Figures represent territory-level results achieved during my tenure*.</p>
+      <p class="footer-note">Figures represent territory-level results achieved during my tenure.</p>
     </section>
   </main>
 
@@ -312,6 +313,9 @@
         target.scrollIntoView({ behavior: 'smooth' });
         document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
         tab.classList.add('active');
+        if (window.innerWidth <= 600) {
+          document.querySelector('.tabs').classList.remove('open');
+        }
       });
     });
 
@@ -332,6 +336,12 @@
       card.addEventListener('toggle', () => {
         card.classList.toggle('open');
       });
+    });
+
+    const menuToggle = document.querySelector('.menu-toggle');
+    const tabs = document.querySelector('.tabs');
+    menuToggle.addEventListener('click', () => {
+      tabs.classList.toggle('open');
     });
 
     function checkFadeIn() {
